@@ -23,6 +23,14 @@ public class Main {
         isCatPlaying(false, 36);
 
         isCatPlaying(false, 35);
+
+        System.out.println("--------------------- Sq2 calc s");
+
+        area(5.0, 4.0);
+
+        area(-1.0, 4.0);
+
+
     }
 
     public static boolean shouldWakeUp(boolean args, int num1){
@@ -76,5 +84,17 @@ public class Main {
         }
         return ret;
     }
+
+    public static double area(double num1, double num2){
+        double ret = -1;
+        if(0>num1 || 0>num2){
+            System.out.println(ret + "Wrong");
+        }else{
+            ret = num1 * num2;
+            System.out.println("Area is" + ret );
+        }
+        return ret;
+    }
+
 
 }
