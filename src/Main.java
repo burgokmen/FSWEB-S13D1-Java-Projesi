@@ -30,6 +30,12 @@ public class Main {
 
         area(-1.0, 4.0);
 
+        System.out.println("--------------------- Sq2 Square calc ");
+
+        area(5.0);
+
+        area(-1);
+
 
     }
 
@@ -96,5 +102,15 @@ public class Main {
         return ret;
     }
 
+    public static double area(double num1){
+        double ret = -1;
+        if(0>num1){
+            System.out.println(ret + "Wrong");
+        }else{
+            ret = num1 * num1 * Math.PI;
+            System.out.println("Area is" + ret );
+        }
+        return ret;
+    }
 
 }
