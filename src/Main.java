@@ -9,13 +9,20 @@ public class Main {
 
         shouldWakeUp (true, -1);
 
-        System.out.println("---------------------");
+        System.out.println("---------------------Teen");
 
         hasTeen(9, 99, 19);
 
         hasTeen(23, 15, 42);
 
         hasTeen(22, 23, 34);
+
+        System.out.println("--------------------- Cat time");
+        isCatPlaying(true, 10);
+
+        isCatPlaying(false, 36);
+
+        isCatPlaying(false, 35);
     }
 
     public static boolean shouldWakeUp(boolean args, int num1){
@@ -50,5 +57,24 @@ public class Main {
         return ret;
     }
 
+    public static boolean isCatPlaying(boolean isSummer, int Cel){
+        boolean ret = false;
+        if(isSummer){
+            if (Cel < 46 && Cel > 25){
+                ret = true;
+                System.out.println(ret + "Cat Playing");
+            }else{
+                System.out.println(ret + "Not playing");
+            }
+        } else{
+            if (Cel < 36 && Cel > 25){
+                ret = true;
+                System.out.println(ret + "Cat Playing");
+            }else{
+                System.out.println(ret + "Not playing");
+            }
+        }
+        return ret;
+    }
 
 }
